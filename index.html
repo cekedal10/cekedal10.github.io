@@ -1,0 +1,467 @@
+<!DOCTYPE html>	
+<html>
+<head>
+	<title>rimbaraya.id - 1st Aceh-Indonesia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Aladin&family=Alata&family=Roboto:wght@300&family=Lemonada:wght@500&family=Roboto+Condensed:wght@300&family=Marck+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="icon" type="" href="jrj.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+<style type="text/css">
+	
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+header{
+	background-image: url(1.png);
+	height: 93vh;
+}
+nav{
+	margin-top: 0px;
+}
+.menu-item{
+	text-align: center;
+	font-size: 18px;
+	height: 70px;
+	margin-top: 0px;
+	padding-top: 20px;
+}
+nav ul{
+	list-style-type: none;
+	float: left;
+	width: 100%;
+}
+nav ul li{
+	display: inline-block;
+	width: 160px;
+	text-align: center;
+	transform: (50%,-50%);
+	padding-left: 0px;
+	font-weight: 1000;
+}
+nav ul li ul li{
+	position: relative;
+	float: left;
+	left: 13px;
+	padding: 5px;
+	text-align: left;
+	font-size: 17px;
+}
+nav ul li .public{
+	padding: 18px;
+	margin-top: -17px;
+}
+nav ul ul{
+	display: none;
+}
+nav ul li:hover > ul{
+	display: grid;
+	margin-left: -10px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+#wycd{
+	animation-duration: 1s;
+}
+nav ul li a:hover{
+	color: green;
+	transition: 0.5;
+	border: 1px solid transparent;
+	background-color: #F4F6F6;
+	padding: 3px;
+	transition: 0.1s;
+	border-radius: 3px;
+}
+nav ul li .active{
+	color: green;
+	border-bottom: 4px solid orange;
+	padding: 2px;
+	transition: 0.5s;
+}
+.close-menu{
+    display: none;
+}
+.open-menu{
+    display: none;
+}
+body{
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.open-menu{
+	display: none;
+}
+.slide first{
+	height: 100vh;
+	width: 99%;
+}
+.container{
+	width: 100%;
+	height: 500px;
+}
+.container img{
+	width: 98%;
+}
+.left-box h1{
+	text-align: center;
+	font-weight: bold;
+}
+.left-box,.right-box p{
+	text-align: left;
+}
+.left-box{
+	float: right;
+	position: relative;
+	width: 45%;
+}
+.right-box{
+	float: left;
+	position: relative;
+	width: 45%;
+}
+footer{
+	background-color: #050C0F ;
+	width: 99%;
+	height: 230px;
+	margin-top: 10px;
+	margin-left: 7px;
+}
+.contact{
+	display: grid;
+	padding: 0px 60px 0px;
+	width: 40%;
+	float: left;
+}
+.contact h1{
+	padding: 10px 10px 5px;
+	font-size: 30px;
+	font-family: helvetica;
+	color: white;
+	font-weight: 1000;
+}
+
+span{
+	padding: 2px;
+	font-family: acme, 'sans-serif';
+	font-weight: bold;
+	font-size: 17px;
+	letter-spacing: 0.4px;
+}
+.contact i{
+	color: white;
+	padding: 7px;
+}
+.email a{
+	font-family: acme,'sans-serif';
+	text-decoration: none;
+	font-weight: bold;
+	color: darkgray;
+}
+.email{
+	padding: 10px;
+}
+.loc{
+	color: darkgray;
+	padding: 10px;
+}
+.ig{
+	color: darkgray;
+	padding: 10px;
+}
+.word{
+	width: 50%;
+	margin-top: 10px;
+	float: right;
+}
+.word h1{
+	font-family: helvetica;
+	color: white;
+	padding-bottom: 10px;
+}
+.word p{
+	font-family: helvetica;
+	width: 70%;
+	color: darkgray;
+	font-size: 14px;
+	padding: 2px;
+}
+.word i{
+	margin-top: 15px;
+	color: white;
+}
+.fb{
+	padding-right: 20px;
+	color: darkgray;
+}
+.wa{
+	color: darkgray;
+}
+.copyright{
+	position:;
+	float: right;
+	width: 100%;
+	background-color: black;
+	margin-top: 20px;
+	height: 30px;
+}
+.copyright p{
+	color: white;
+	text-align: center;
+	font-weight: 1000;
+	margin-top: 6px;
+}
+.up{
+	color: black;
+	float: right;
+	margin-top: -120px;
+	border-radius: 50px;
+	background: white;
+	margin-right: 20px;
+	text-decoration: none;
+	transition: 
+}
+
+@media screen and (max-width: 600px){
+	*{
+	}
+	header{
+		background-image: url(1.png);
+		height: 60%;
+		width: 100%;
+		margin-top: 0px;
+		border-radius: 4px;
+	}
+    nav{
+		position: absolute;
+        height: 40vh;
+        transition: 0.7s;
+        top: -50vh;
+		width: 100%;
+		height: auto;
+		padding-bottom: 15px;
+		background-color: #0C090A;
+		border-radius: 5px;
+    }
+	.menu-item{
+		margin-top: -20px;
+		
+	}
+    nav ul li{
+      	padding-top: 5px;
+        margin-top: 6px;
+		float: left;
+		display: inline-block;
+		width: 34%;
+		margin-left: 33%;
+		letter-spacing: 1px;
+		font-size: 11px;
+	}
+	nav ul li ul li{	
+		float: right;
+		padding: 2px;
+		font-size: 10px;
+		margin-left: 1px;
+		text-align: center;
+		width: 95%;
+}
+	nav ul li .public{
+		padding: 0px;
+		margin-top: 2px;
+}
+    nav ul li a{
+        padding: 0px;
+        margin: auto;
+    }
+    .close-menu{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+	   	float: right;
+	   	margin-left: -43px;
+	   	cursor: pointer;
+	   	background-color: white;
+	   	border-radius: 20px;
+    }
+	.open-menu {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        float: right;
+        cursor: pointer;
+        transition: 1s;
+		background-color: white;
+		border-radius: 20px;
+		margin-right: 3px;
+		margin-top: 0px;
+	}
+	.container{
+		width: 100%;
+		font-size: 20px;
+	}
+	.left-box,.right-box{
+		width: 100%;
+		margin-top: 20px;;
+	}
+	.left-box img,.right-box img{
+		width: 100%;
+		height: 200px;	
+		margin-top: 10px;
+		border-radius: 4px;
+	}
+	.left-box h1, .right-box h1{
+		font-size: 20px;
+		text-align: center;
+	}
+	.left-box p, .right-box p{
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	footer{
+		display: none;
+	}
+	</style>
+<header>
+	<link rel="stylesheet" type="text/css" href="element/header.css"/>
+	<img src="menu-512.png" class="open-menu" onclick="openmenu()">
+	<nav class="wow fadeInDown" id="menu">
+		<div class="menu-item" >
+			<ul>
+				<li><a href="index.html" class="active">Who we are</a></li>
+				<li><a href="#">What we do</a></li>
+				<li><a href="#">What you can do &shy; <i  class="fas fa-caret-down"></i></a>
+					<ul class="wow fadeInUp" id="wycd">
+						<li><a href="#">Sayur</a></li>
+						<li><a href="#">Kacangan</a></li>
+						<li><a href="#">Aroma Pala</a></li>
+						</ul>
+				</li>
+				<li><a href="#">Publication &shy; <i  class="fas fa-caret-down"></i></a>
+					<ul class="public wow fadeInUp" id="wycd">
+						<li><a href="#">Birpala</a></li>
+						<li><a href="#">Kupi Gampong</a></li>
+						<li><a href="#">Cengkeh Madu</a></li>
+						<li><a href="#">Jahe Boh Kuyun</a></li>
+						</ul>
+				</li>
+				<li><a href="#kontak">Contact us</a></li>
+				<li><a href="#">Donation</a></li>
+			</ul>
+    		 	<img src="close+icon-1320184117228553763.png" class="close-menu" onclick="closemenu()">
+		</div>
+	</nav>
+	
+   <script>
+        var menu = document.getElementById("menu");
+        
+        function closemenu(){
+            
+            menu.style.top = "-50vh";
+        }
+	   
+	   function openmenu(){
+            
+            menu.style.top = "0vh";
+		
+        }
+    </script>
+	
+</header> 
+<body> 
+	<link rel="stylesheet" type="text/css" href="element/body.css"/>
+	<div class="container wow zoomIn">
+		<div class="left-box">
+			<h1>Kenapa Alam perlu dijaga?</h1>
+			<img src="1.png">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="right-box">
+			<h1>Alam adalah Paru dunia</h1>
+			<img src="2.png">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+</body>
+<footer id="kontak" class="wow zoomIn">
+	<link rel="stylesheet" type="text/css" href="element/footer.css"/>
+	<div class="contact">
+		<h1>Contact Us</h1>
+			<span class="ig"><i class="fab fa-instagram fa-lg" style="border: 1px solid transparent; border-radius: ; background: none ; font-size: 23px;"></i>&nbsp;&nbsp;&nbsp;      </span>
+		<span class="email"><i class="fas fa-envelope fa-lg" style="border: 1px solid transparent; border-radius: 400px; background:none;		font-size: 20px;"></i><a href="#">&nbsp;&nbsp;&nbsp;   </a></span>
+		<span class="loc"><i class="fas fa-map-marker-alt fa-lg" style="border: 1px solid transparent; border-radius: 300px; background: /*#2B2B2B*/ none;"></i>&nbsp;&nbsp;&nbsp;&nbsp;       </span>
+	</div>
+	<div class="word">
+		<h1>Apa yang kami Lakukan</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+		<span class="fb"><i class="fab fa-facebook-f fa-lg " style="/*border: 1px solid transparent; border-radius: 20px;*/ background: none;	font-size: 28px;"></i>&nbsp;&nbsp;&nbsp;       </span> 
+		<span class="wa"><i class="fab fa-whatsapp fa-lg" style="border: 1px solid transparent; border-radius: 400px; background: #2B2B2B;		font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;       </span>
+</div>
+	<div class="copyright">
+		<p>© copyright 2021 by Jejak-Rimbaraya</p>
+	</div>
+	<div class="up">
+		<a href="#menu"><i  class="fas fa-caret-down fa-4x"></i></a>
+	</div>
+</footer>
+
+
+<!--JAVA SCRIPT CODE -->
+	
+	
+<!-- Wow Js Animated -->	
+	<script>
+		var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+wow.init();
+	</script>
+
+</html>
+
+<!--
+<span class="fa-stack" style="vertical-align: top;">
+  <i class="far fa-circle fa-stack-2x"></i>s
+  <i class="fas fa-envelope fa-stack-1x fa-lg"></i>
+</span>
+-->
+
