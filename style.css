@@ -62,8 +62,8 @@ nav .container-fluid .offcanvas{
 
 }
 nav .container-fluid .offcanvas .offcanvas-header{
-	width: 96.3%;
-	margin-top: -3px;
+	width: 96.2%;
+	margin-top: 6px;
 }
 nav .container-fluid .offcanvas .offcanvas-header img{
 	width: 100px;
@@ -76,7 +76,7 @@ nav .container-fluid .offcanvas .offcanvas-header button.btn-close{
 	padding: 15px;
 	border: 4px solid black;
 	border-radius: 0px;
-	transition: 0.1s;
+	transition: 0.2s;
 }
 .offcanvas-body ul li a{
 	padding: 7px;
@@ -115,6 +115,22 @@ section .bg .carousel-inner{
 }
 .carousel-inner button{
 	width: 100px;
+}
+
+.carousel h2{
+    position: absolute;
+    color: white;
+    font-family: 'dela gothic one', sans-serif;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: -8%;
+}
+
+.carousel h2 p{
+    position: absolute;
+    color: white;
+    font-family: 'dela gothic one', sans-serif;
+    font-size: 20px;
 }
 
 section .bg .carousel-inner img{
@@ -166,6 +182,7 @@ section .isi p.animate__animated{
 	filter: brightness(90%);
 	transition: 0.3s;
 }
+
 .img-kedua img{
 	cursor: pointer;
 	width: 31%;
@@ -198,6 +215,10 @@ section .isi p.animate__animated{
     cursor: pointer;
 }
 */
+
+/*BAWAAN*/
+
+
 footer{
 	margin-top: 20px;
 	width: 100%;
