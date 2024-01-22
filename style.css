@@ -18,6 +18,8 @@ body{
 
 }
 
+/*navbar*/
+
 nav .container-fluid .navbar-brand{
 	color: black;
     width: 50%;
@@ -102,10 +104,9 @@ nav .container-fluid .offcanvas .offcanvas-header button.btn-close{
 .offcanvas-body ul li ul a:hover{
 	background: none;
 }
-/*
-nav .container-fluid .navbar-brand:hover{
-}
-*/
+
+
+/*gambar slide*/
 
 section .bg{
     margin-top: 0px;
@@ -153,6 +154,9 @@ section .isi p{
 section .isi p.animate__animated{
 	transition: 2s ease;
 }
+
+/*gambar display*/
+
 .img{
 	display: inline-block;
 	cursor: pointer;
@@ -183,41 +187,119 @@ section .isi p.animate__animated{
 	transition: 0.3s;
 }
 
-.img-kedua img{
-	cursor: pointer;
-	width: 31%;
-	height: 450px;
-	margin-left: 20px;
-	filter: brightness(50%);
+.section-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 35px;
+    width: 94%;
+    margin: 15px auto;
 }
-.img-kedua img:hover{
-	transform: scale(1.05);
-	filter: brightness(100%);
-	transition: 0.2s;
+
+.section-card img{
+    width: 400px;
 }
-/*
-.img-kedua h4{
-    font-size: 0px;
-    position: absolute;
-    margin-top: -390px;
-    margin-left: 10px;
-    height: 380px;
-    width: 31.8%;
-}
-.img-kedua h4:hover{
-    font-size: 30px;
-    position: absolute;
-    margin-top: -390px;
-    margin-left: 10px;
-    height: 380px;
-    width: 31.8%;
-    transform: scale(1.0);
+
+.section-card img:hover{
     cursor: pointer;
+    filter: brightness(50%);
+    transform: scale(1.05);
+    transition: 0.3s;
 }
-*/
 
-/*BAWAAN*/
 
+/*popup*/
+
+.popup, .pop-up, .po-pup{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.97);
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.popup__content, .pop-up__content, .po-pup__content{
+    border: 5px solid white;
+    padding: 30px;
+    width: 85%;
+    height: 470px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup__image, .pop-up__image, .po-pup__image{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.popup__image img, .pop-up__image img, .po-pup__image img{
+    display: block;
+    width: 30%;
+}
+
+.popup__header, .pop-up__header, .po-pup__header{
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: -37%;
+}
+
+.popup__header h1, .pop-up__header h1, .po-pup__header h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    transform: translate(14%)
+}
+
+.popup__text, .pop-up__text, .po-pup__text{
+    padding: 0 36px;
+    line-height: 1,4;
+    color: white;
+}
+
+.popup__text h5, .pop-up__text h5,.po-pup__text h5{
+    transform: translate(45%,60%);
+    width: 70%;
+    
+}
+
+.popup__btn, .pop-up__btn, .po-pup__btn{
+    color: white;
+}
+
+.popup__btn a, .pop-up__btn a,.po-pup__btn a{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 1000;
+    transform: translate(700%,300%);
+}
+
+.popup__btn a:hover, .pop-up__btn a:hover,.po-pup__btn a:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+.popup:target{
+    visibility: visible;
+    transition: 2s;
+}
+
+.pop-up:target{
+    visibility: visible;
+    transition: 2s;
+}
+ 
+.po-pup:target{
+    visibility: visible;
+    transition: 2s;
+}
+
+/*footer*/
 
 footer{
 	margin-top: 20px;
