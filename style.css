@@ -191,12 +191,12 @@ section .isi p.animate__animated{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 35px;
-    width: 94%;
+    width: 92%;
     margin: 15px auto;
 }
 
 .section-card img{
-    width: 400px;
+    width: 300px;
 }
 
 .section-card img:hover{
